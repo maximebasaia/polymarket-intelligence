@@ -1,7 +1,7 @@
 exports.handler = async function(event) {
   const url = event.queryStringParameters?.url;
 
-  if (!url || !url.includes('netlify/functions/polymarket.js')) {
+  if (!url || !url.includes('polymarket.com')) {
     return {
       statusCode: 400,
       body: JSON.stringify({ error: 'URL invalide' })
